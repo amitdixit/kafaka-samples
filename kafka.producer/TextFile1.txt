@@ -1,0 +1,4 @@
+﻿docker exec -it broker ls /opt/kafka/bin
+docker exec -it broker /opt/kafka/bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+docker exec -it broker /opt/kafka/bin/kafka-topics.sh --alter --topic my-topic --partitions 3 --bootstrap-server localhost:9092
+docker exec -it broker opt/kafka/bin/kafka-topics.sh --describe --topic test-topic --bootstrap-server localhost:9092
